@@ -1,0 +1,12 @@
+.col-sm-4 {
+	background-color: blue;
+}
+
+/*body {
+  min-height: 2000px;
+  padding-top: 70px;
+}*/
+
+.navbar-toggle {
+	border: none;
+}

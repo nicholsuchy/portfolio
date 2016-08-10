@@ -1,0 +1,363 @@
+//GLOBAL
+body {
+  font-family: 'Raleway', sans-serif;
+ }
+
+.title {
+	font-family: 'Philosopher', sans-serif;
+	font-size: 50px;
+}
+
+.vertalign {
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+}
+
+hr {
+	border-top: 5px solid #eeeeee;
+	width: 75%;
+}
+
+.hrsmall {
+	border-top: 1px solid #c09f66;
+	width: 10%;
+}
+
+.bkrd {
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.overlay{
+	display: none;
+}
+
+.hoverable:hover {
+	.overlayhide{
+			display: none;
+	}
+	.overlay{
+		display: block;
+		background-color:rgba(000, 000, 000, 0.7);
+	    position: absolute;
+	    width: 100%;
+	    height: 100%;
+		h2 {
+		color: #fff;
+		}
+	}
+}
+
+//NAVIGATION
+.logo {
+	height: 50px;
+}
+
+.navbar-toggle {
+	border: none;
+	// .navbar-header {
+	// 	background-color: white;
+	// }
+}
+.changecolor {
+	background-color: transparent;
+}
+.changecolor.on {
+	background-color: white;
+	border-bottom: 1px solid #ccc;
+} 
+
+.navbar-wrapper {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 20;
+}
+
+ul.nav.navbar-nav li {
+	text-align: right;
+}
+
+.nospace {
+	&.col-xs-12, 
+	&.col-xs-8, 
+	&.col-xs-2, 
+	&.col-sm-12, 
+	&.col-sm-8, 
+	&.col-sm-6, 
+	&.col-sm-4 {
+  		margin: 0; 
+  		padding: 0; 
+  	}
+  	.row { 
+  		margin: 0;
+  	}
+  	&.container-fluid {
+  		padding: 0;
+  	}
+}
+//FOOTER
+.footer{
+	padding-top: 15px;
+	padding-bottom: 15px;
+	background-color: #ccc;
+	.fa-circle {
+			color: #949599
+		}
+
+	span:hover{
+		.fa-circle {
+			color: #fff;
+		}
+		.fa-inverse {
+			color: #949599;
+		}
+	}
+
+	a {
+		text-decoration: none;
+	}
+}
+.footspace {
+	margin-top: 80px;
+}
+
+//back to top
+.back-to-top {
+    cursor: pointer;
+    position: fixed;
+    padding-bottom: 0;
+    bottom: 13px;
+    right: 20px;
+    // display:none;
+    color: #949599;
+    z-index: 500;
+}
+
+//INTERESTS***
+.interestimg {
+	width: 100%;
+}
+
+
+//COURSE STUDIES*********BODY CLASS=COURSESTUDIES
+.coursestudies {
+
+	.row { 
+  		margin: 0;
+  	}
+
+  	.container-fluid {
+  		padding: 0;
+  	}
+
+	h2 {
+		color: #fff;
+		font-size: 60px;
+		text-shadow: 0 0 7px #000;
+	}
+
+	p {
+		font-size: 16px;
+	}
+
+}
+.lgbrick {
+	height: 400px;
+}
+
+.mdbrick {
+	height: 300px;
+	/* Small devices (tablets, 768px and up) */
+	@media (max-width: @screen-xs-max) {
+		height: 400px;
+	}
+}
+
+.smbrick {
+	height: 200px;
+	@media (max-width: @screen-xs-max) {
+		height: 400px;
+	}
+}
+
+#art225 {
+	background-image: url("../images/art225/paintbrushes.jpg");
+}
+
+#cis115 {
+	background-image: url("../images/cis115/keyboard.jpg");
+}
+
+#cis233 {
+	background-image: url("../images/cis233/drawers.jpg");
+}
+
+#cis141 {
+	background-image: url("../images/cis141/organize.jpg");
+}
+#cis242 {
+	background-image: url("../images/cis242/coffeemachine.jpg");
+}
+
+#cis000 {
+	background-image: url("../images/cis000/nightsky.jpg");
+}
+
+#cis243 {
+	background-image: url("../images/cis243/elephant.jpg");
+}
+#cis244 {
+	background-image: url("../images/cis244/juice.jpg");
+}
+#cis245 {
+	background-image: url("../images/cis245/cascade2.jpg");
+}
+
+#cis250 {
+	background-image: url("../images/cis250/records.jpg");
+}
+#cis241 {
+	background-image: url("../images/cis241/dewyweb.jpg");
+}
+
+.courseroom {
+	margin-bottom: 150px; //stops carousel-captions from overlapping next course name
+}
+
+.carousel-caption {
+	position: relative;
+	left: auto;
+	right: auto;
+}
+
+.carousel-indicators {
+	bottom: -30px;
+}
+.carousel-indicators li {
+	border: 1px solid #000;
+}
+.carousel-inner > .item > img {
+	margin: 0 auto;
+	height: 600px;
+}
+.carousel {
+	height: 600px;
+}
+
+//HOME PAGE*****************************BODY CLASS=HOME
+.home {
+	.jumbotron {
+		height: 500px;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-image: url("../images/unsplash/bluecrayons3.jpg");
+	}
+	.jumbotron div.container h1 {
+		color: #c09f66;
+		text-shadow: 1px 1px #FFF;
+		font-size: 175px;
+	}
+
+	//margin bottom in less comes from too many variables
+	nav.navbar.navbar-default.navbar-static-top {
+		margin-bottom: 0px;
+	}
+
+	.site-wrapper-inner {
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-image: url("../images/self-portrait2012.jpg");
+	}
+
+	h3 {
+		margin-top: 0;
+		margin-bottom: 20px;
+	}
+
+	p {
+		font-size: 16px;
+		line-height: 2;
+	}
+
+	.space {
+		// padding-top: 5%;
+		padding-bottom: 5%;
+	}
+
+	.lead p{
+		padding-bottom: 5%;
+	}
+
+	.smmarg {
+		margin-top: 40px;
+	}
+
+	.mdmarg {
+		margin-top: 80px;
+	}
+
+	#resumelink {
+		background-image: url("../images/unsplash/planning.jpg");
+	}
+	#courseslink{
+		background-image: url("../images/cis000/nightsky.jpg");
+	}
+	#interestslink {
+		background-image: url("../images/unsplash/bluecrayons.jpg");
+	}
+	.imglink{
+		height: 480px;
+		// border: 15px solid white;
+	}
+	.nohvrpad:hover{
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+
+}
+
+//RESUME*********************** BODY CLASS=RESUME
+.resume {
+	.well {
+		background-color: #f2f2f2;
+	}
+	.bracket{
+		font-size: 150px;
+		line-height: .93;
+	}
+
+	.name {
+		line-height: .8;
+		font-size: 62px;
+	}
+
+	.lastname {
+		font-weight: 900;
+		letter-spacing: 4px;
+	}
+
+	.contact {
+	@media (max-width: @screen-md-max) {
+		.text-left;
+		}
+	}
+	h4 {
+		border-bottom: 2px solid #ccc;
+		// box-shadow: 10px 10px 10px #888888;
+	}
+	.nameblock {
+		height: 90px;
+		margin-bottom: 10px;
+		@media (max-width: @screen-sm-max) {
+		.center-block;
+		}
+
+	}
+
+}
